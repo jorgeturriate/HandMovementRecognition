@@ -39,7 +39,6 @@ def predict():
         outputs = model(real_tensor, optical_tensor)
         _, predicted = torch.max(outputs.data, 1)
         predicted_class = predicted.item()
-        print(predicted_class)
 
     return jsonify({'class': predicted_class})
 

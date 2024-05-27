@@ -84,7 +84,7 @@ class RecognitionNetwork(nn.Module):
 
 
 model = RecognitionNetwork(input_channels=3, num_classes=10)
-model.load_state_dict(torch.load('northwestern_classifier47.pt', map_location=torch.device('cpu')))
+model.load_state_dict(torch.load('northwestern_classifier53.pt', map_location=torch.device('cpu')))
 model.eval()
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")

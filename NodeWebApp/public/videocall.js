@@ -108,7 +108,7 @@ function sendFrames() {
     formData.append('frames[]', frame, `frame${index}.jpg`);
   });
 
-  fetch('http://localhost:5000/predict', {
+  fetch('https://localhost:5000/predict', {
     method: 'POST',
     body: formData
   })
